@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8" /><!DOCTYPE html>
+    <meta charset="uft-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0" />
+</head>
+<style>
+    @font-face {
+    src: url("Poppins.ttf");
+    font-family: "Capr";
+}
+@font-face {
+    src: url("Baumans.ttf");
+    font-family: "Bau";
+}
+
+*{
+    --white: #EBEBEB;
+    --red: #EE0017;
+    resize: 0;
+    outline: 0;
+    user-select: none;
+    font-family: "Capr";
+    border-style: hidden;
+}
+button {
+    background-color: transparent;
+}
+* .icon{
+    position: absolute;
+    transform: ;
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: center;
+}
+.o{
+    inset: 5% 5% auto auto;
+}
+.n{
+    inset: 25% auto auto 5%;
+    transform: rotate(-15deg);
+}
+.e{
+    inset: 60% 8% auto auto;
+}
+.t{
+    inset: auto auto 10% 5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+
+.viewport{
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+.viewport > article {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+.p1{
+    background-color: var(--red);
+}
+.p2{
+    background-color: var(--white);
+}
+
+.p1{
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+}
+.p1 > main{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.p1 > main > button{
+    width:100%;
+    text-align: center;
+    background-color: transparent;
+}
+.p1 > main > .span{
+    font-size: 35px;
+    color: var(--white);
+    word-spacing: 5px;
+    font-weight: bold;
+}
+strong{
+    font-family: Bau;
+    font-size: 36px;
+    color: #FF8F00;
+}
+.p1 > main > .small{
+    font-size: 15px;
+    color: var(--white);
+    font-weight: 300;
+    word-spacing: 3px;
+}
+.p1 > .image_holder{
+    width: 200px;
+    height: 200px;
+    margin: 25px auto 0%;
+    background-color: transparent;
+    object-fit: cover;
+    animation: shake 2s infinite;
+    transform: rotate(0deg);
+}
+@keyframes shake{
+    0%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(45deg);
+    }
+    65%{
+        transform: rotate(0deg);
+    }
+}
+.p1 > .image_holder > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.p1 > .info{
+    height: 50px;
+    margin-top: 5%;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 15px;
+    text-decoration: dotted;
+}
+
+
+.p2{
+    display: flex;
+    flex-direction: column ;
+    justify-content: flex-start;
+    align-items: center;
+}
+.p2 > main{
+    width: 90%;
+    height: auto ;
+    padding: 2% 3%;
+    margin: 5% auto;
+    border-radius: 15px;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center;
+    background-color: transparent;
+    overflow: auto;
+}
+.p2 > main .title{
+    padding-bottom: 2%;
+    border-bottom: 4px solid #FF8F00;
+    font-size: 23px;
+    font-weight: bold;
+}
+.p2 > main .description{
+    margin-top: 3%;
+    font-size: 16px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+div{
+    width : 85%;
+    height: 60px;
+    padding: 2%;
+    margin: 4% auto;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    display: flex ;
+    background-color: #CDCDCD;
+}
+div > .span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.icn{
+    width: 40px;
+    height: 45px;
+}
+
+</style>
+<body>
+    
+    <section class="viewport">
+        <article class="p1" id="p1">
+            <svg class="icon o" width="24" height="24" viewBox="0 0 24 24" fill="transparent" stroke="#FF8F00" stroke-width="1.4" class="lucide lucide-apple-icon lucide-apple"><path d="M12 6.528V3a1 1 0 0 1 1-1h0"/><path d="M18.237 21A15 15 0 0 0 22 11a6 6 0 0 0-10-4.472A6 6 0 0 0 2 11a15.1 15.1 0 0 0 3.763 10 3 3 0 0 0 3.648.648 5.5 5.5 0 0 1 5.178 0A3 3 0 0 0 18.237 21"/></svg>
+            <svg class="icon n" width="24" height="24" viewBox="0 0 24 24" fill="transparent" stroke="#FF8F00" stroke-width="1.4" class="lucide lucide-chart-spline-icon lucide-chart-spline"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M7 16c.5-2 1.5-7 4-7 2 0 2 3 4 3 2.5 0 4.5-5 5-7"/></svg>   
+            <svg class="icon e" width="24" height="24" viewBox="0 0 24 24" fill="transparent" stroke="#FF8F00" stroke-width="1.4" class="lucide lucide-cpu-icon lucide-cpu"><path d="M12 20v2"/><path d="M12 2v2"/><path d="M17 20v2"/><path d="M17 2v2"/><path d="M2 12h2"/><path d="M2 17h2"/><path d="M2 7h2"/><path d="M20 12h2"/><path d="M20 17h2"/><path d="M20 7h2"/><path d="M7 20v2"/><path d="M7 2v2"/><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg>
+            <svg class="icon t" width="24" height="24" viewBox="0 0 24 24" fill="transparent"stroke="#FF8F00" stroke-width="1.4" class="lucide lucide-dollar-sign-icon lucide-dollar-sign"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+
+            <main>
+                <button class="span">Introducing <strong>ZUGGY</strong></button>
+                <button class="small">A community-driven token, promoting the innovations of Casper($CSPR).</button>
+            </main>
+            <button class="image_holder"><img src="Zuggie.jpg" /></button>
+            <button class="info">SCROLL DOWN</button>
+        </article>
+        
+        <article class="p2" id="p2">
+            <main>
+                <button class="title">What is $ZUG ??</button>
+                <button class="description">Inspired by the Zug Consensus protocol, Zuggie is a zippy, reliable 2D ghost mascot that embodies the Casper Network's speed, security, and instant finality.<br/><br/>With a winking grin and a trail of light particles, Zuggie powers the Zugger Token, a fun, community-driven memecoin that showcases Casper's technological strength.</button>
+            </main>
+            <main>
+                <button class="title">Available official links</button>
+                <div onclick="direct('T')">
+                    <button class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-icon lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg></button>
+                    <button class="span">Telegram channel</button>
+                </div>
+                <div onclick="direct('X')">
+                    <button class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#2E2E2E" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></button>
+                   <button class="span">X account (formally twitter)</button>
+                </div>
+            </main>
+        </article>
+    </section>
+    
+</body>
+<script>
+    const direct = (type) =>{
+        let attr = `${type}`;
+        let final = (attr == "T")? "https://t.me/officialZuggie" : "https://x.com/Zuggy_fun";
+        
+        let a = document.createElement("a");
+        a.href = `${final}`;
+        
+        a.click();
+    }
+</script>
+</html>
